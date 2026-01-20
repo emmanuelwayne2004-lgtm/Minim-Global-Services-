@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Minim Global Services</title>
+    <style>
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #0B2D60;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #001F3F;
+        }
+
+        .logo {
+            height: 70px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .blog-post {
+            background: #1A3A6B;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-post h2 {
+            color: #4FC3F7;
+        }
+
+        .blog-post p {
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+
+        .blog-post a {
+            color: #4FC3F7;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .live-stream {
+            background: #1A3A6B;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .live-stream h2 {
+            color: #4FC3F7;
+        }
+
+        .live-stream iframe {
+            border-radius: 8px;
+            width: 100%;
+            height: 500px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001F3F;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .blog-container {
+                padding: 20px;
+            }
+
+            .blog-post {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .blog-post {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="MINIM LOGO.jpeg" alt="Minim Global Services Logo" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Blog</h1>
+        <p>Stay updated with the latest insights from Minim Global Services.</p>
+
+        <div class="live-stream">
+            <h2>Watch Our Live Stream</h2>
+            <p>Stay tuned for live updates and broadcasts from Minim Global Services.</p>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="blog-container">
+            <!-- First Blog Post with Image -->
+            <div class="blog-post">
+                <a href="Digital marketing.Html">
+                    <img src="Digital Marketing 1.jpg" alt="Digital Marketing Image">
+                </a>
+                <h2>How Digital Marketing is Transforming Businesses</h2>
+                <p>Discover how digital marketing strategies can help brands expand their reach and increase revenue.
+                </p>
+                <a href="Digital marketing.Html">Read More</a>
+            </div>
+
+            <!-- Second Blog Post with Image -->
+            <div class="blog-post">
+                <a href="Media Consultancy.Html">
+                    <img src="Media Consultancy.jpg" alt="Media Consultancy Image">
+                </a>
+                <h2>The Importance of Media Consultancy</h2>
+                <p>Learn why media consultancy is essential for businesses looking to enhance their brand identity.</p>
+                <a href="Media Consultancy.Html">Read More</a>
+            </div>
+
+            <!-- Third Blog Post with Image -->
+            <div class="blog-post">
+                <a href="Business Growth.Html">
+                    <img src="business growth image.jpg" alt="Business Growth Image">
+                </a>
+                <h2>Driving Business Growth through Innovation</h2>
+                <p>Explore the latest innovations and how they can drive growth in businesses across various sectors.
+                </p>
+                <a href="Business Growth.Html">Read More</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minim Global Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

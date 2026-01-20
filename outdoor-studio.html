@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor & Studio Shoots - Minim Studios</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 50px auto; padding: 20px; background: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; }
+        h1 { color: #333; }
+        p { color: #666; font-size: 18px; margin-top: 20px; }
+        .cta, .back-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; transition: 0.3s; }
+        .cta:hover, .back-btn:hover { background: #218838; }
+        .back-btn { background: #007bff; }
+        .footer { margin-top: 40px; padding: 15px; background: #222; color: white; font-size: 14px; }
+        
+        /* Image Gallery Grid */
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px; 
+            margin-top: 30px; 
+        }
+
+        /* Image Styling */
+        .gallery img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+            opacity: 0; /* Initially hidden for animation */
+            transform: scale(0.9); /* Start scaled down for animation */
+            transition: transform 0.3s ease, opacity 0.6s ease;
+        }
+
+        .gallery img.show {
+            opacity: 1; /* Fade in */
+            transform: scale(1); /* Zoom in */
+        }
+
+        /* Media Query for Responsiveness */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Outdoor & Studio Shoots</h1>
+        <p>Our outdoor and studio shoots offer you the perfect combination of natural and controlled settings to capture stunning moments. Whether it's for portraits, lifestyle, or special events, we bring creativity and professionalism to every shot.</p>
+        
+        <div class="gallery">
+            <img src="outdoor studio 1.jpg" alt="Outdoor Shoot 1">
+            <img src="outdoor shoot 2.jpg" alt="Outdoor Shoot 2">
+            <img src="studio shoot 1.jpeg" alt="Studio Shoot 1">
+            <img src="studio shoot 2.jpg" alt="Studio Shoot 2">
+            <img src="outdoor studio 3.jpg" alt="Outdoor Shoot 3">
+            <img src="studio 3.jpg" alt="Studio Shoot 3">
+        </div>
+
+        <a href="contact.html" class="cta">Book a Session</a>
+        <a href="Photography.Html" class="back-btn">Back to Photography</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Minim Studios | <a href="contact.html" style="color: white;">Contact Us</a>
+    </div>
+
+    <script>
+        // Wait for the DOM to load
+        window.onload = function() {
+            // Select all images in the gallery
+            const images = document.querySelectorAll('.gallery img');
+            
+            // Add 'show' class to each image after a short delay
+            images.forEach((image, index) => {
+                setTimeout(() => {
+                    image.classList.add('show');
+                }, index * 200); // Delay for a nice staggered effect
+            });
+        };
+    </script>
+
+</body>
+</html>

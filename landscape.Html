@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - Minim Architecture</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #004aad, #ffffff);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            padding: 30px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Logo */
+        .logo {
+            width: 150px;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            color: #004aad;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        .gallery img {
+            width: 30%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #004aad;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #003380;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #004aad;
+            color: white;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Print Styles - Landscape */
+        @media print {
+            @page {
+                size: landscape;
+                margin: 0;
+            }
+
+            body {
+                margin: 0;
+                font-size: 16px;
+            }
+
+            .container {
+                width: 100%;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .gallery img {
+                height: 200px; /* Adjust image height for print */
+            }
+
+            .btn {
+                display: none; /* Hide buttons for print */
+            }
+
+            .footer {
+                display: none; /* Hide footer for print */
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container fade-in">
+        <!-- Logo -->
+        <img src="Engineers.png" class="logo" alt="Minim Architecture Logo">
+
+        <h1>Landscape Design</h1>
+        <p>"Building Dreams, Brick by Brick" 🏡✨  
+            Real estate is more than just buying and selling properties—it's about creating homes, opportunities, and lasting legacies. Every foundation laid, every space designed, and every investment made shapes the future. Whether you're building, buying, or investing, remember: real estate isn't just about properties—it's about possibilities.
+        </p>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <img src="landscape design 1.jpg" alt="Real Estate 1">
+            <img src="landscape design 2.jpg" alt="Real Estate 2">
+            <img src="landscape design 3.jpg" alt="Real Estate 3">
+            <img src="landscape design 5.jpg" alt="Real Estate 4">
+        </div>
+
+        <!-- Centered Buttons -->
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="contact.html" class="btn">Contact Us</a>
+            <a href="architect.html" class="btn">Back to Architect</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Minim Architecture | <a href="contact.html">Contact Us</a>
+    </div>
+
+</body>
+</html>

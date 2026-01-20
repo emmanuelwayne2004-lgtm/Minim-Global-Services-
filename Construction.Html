@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction - Minim Architecture</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #004aad, #ffffff);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Logo */
+        .logo {
+            width: 150px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            color: #004aad;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 columns for larger image display */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #004aad;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #003380;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #004aad;
+            color: white;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container fade-in">
+        <!-- Logo -->
+        <img src="Engineers.png" class="logo" alt="Minim Architecture Logo">
+
+        <h1>Construction Services</h1>
+        <p> We provide a wide range of construction services in which safety, integrity, Quality and Professionalism is
+            our greatest interest in achieving great Results .</p>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <img src="construction image 1.jpg" alt="Construction Project 1">
+            <img src="construction image 2.jpg" alt="Construction Project 2">
+            <img src="construction image 3jpg.jpg" alt="Construction Project 3">
+            <img src="construction image 4.jpg" alt="Construction Project 4">
+        </div>
+
+        <div>
+            <a href="contact.html" class="btn">Contact Us</a>
+            <a href="Architect.html" class="btn">Back to Architect</a>
+            <a href="home.html" class="btn">Back Home</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Minim Architecture | <a href="contact.html">Contact Us</a>
+    </div>
+
+</body>
+
+</html>

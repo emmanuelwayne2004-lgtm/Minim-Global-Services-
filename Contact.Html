@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Minim Global Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li,
+        form,
+        input,
+        textarea,
+        select {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #0B2D60;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #001F3F;
+        }
+
+        .logo {
+            height: 70px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 20px 0;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 0;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001F3F;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #f0a500;
+        }
+
+        form {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 40px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+            color: #0B2D60;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #e6f0ff;
+            border: 1px solid #b3cce6;
+            color: #0B2D60;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #0B2D60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+        @media (max-width: 768px) {
+            .map-container {
+                padding-bottom: 56.25%;
+                /* Maintains aspect ratio */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .map-container {
+                height: 200px;
+                /* Adjust for very small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="MINIM LOGO.jpeg" alt="Minim Global Services Logo" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether you have questions about our services, want to collaborate, or simply
+            need more information, our team at Minim Global Services is here to assist you.</p>
+
+        <div class="contact-info">
+            <p>Feel free to reach out to us using the details below or by filling out the contact form. Our office is
+                conveniently located, and we invite you to visit us during working hours.</p>
+
+            <p><strong>Phone:</strong> 033 88 33 88</p>
+            <p><strong>Email:</strong> info@minimglobal.com</p>
+
+            <p>We also encourage you to explore our <a href="blog.html"
+                    style="color: #f0a500; text-decoration: none; font-weight: bold;">Blog</a> to stay updated with our
+                latest projects, insights, and industry trends.</p>
+        </div>
+
+        <form action="submit_form.php" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="select option">Select Option</option>
+                <option value="mini-studio">Mini Studio</option>
+                <option value="mini-clothing">Mini Clothing</option>
+                <option value="mini-architect">Mini Architect & Design</option>
+                <option value="mini-food">Mini Food</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d190.76284218873295!2d-13.251371223382202!3d8.471558490632718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1739960009343!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minim Global Services. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@minimsudios" target="_blank" class="fab fa-tiktok"></a>
+            <a href="https://www.facebook.com/@Minim Gbs" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

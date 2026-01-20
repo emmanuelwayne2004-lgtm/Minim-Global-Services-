@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Minim Global Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #0B2D60;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: #001F3F;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 70px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus,
+        nav ul li a:active {
+            color: #ffffff;
+            background-color: #007BFF;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            background-color: #003366;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+            width: 220px;
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001F3F;
+            color: #ffffff;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="MINIM LOGO.jpeg" alt="Minim Global Services Logo" class="logo">
+            </div>
+            <ul>
+                <li><a href="Home.Html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>About Minim Global Services</h1>
+            <p>Minim Global Services is a leading company dedicated to providing top-quality services across various
+                industries. Our mission is to innovate and drive growth for businesses through strategic solutions.</p>
+        </section>
+
+        <section class="container">
+            <h2>Our Mission</h2>
+            <p>To empower businesses with innovative solutions that enhance efficiency, connectivity, and
+                sustainability.</p>
+        </section>
+
+        <section class="container">
+            <h2>Our Vision</h2>
+            <p>To be the leading provider of exceptional services, fostering technological advancement and business
+                growth worldwide.</p>
+        </section>
+
+        <section class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="director1.jpg" alt="Director 1">
+                    <h3>MR. A.A. JOHNSON</h3>
+                    <p>Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="director2.jpg" alt="Director 2">
+                    <h3>MRS. FLORENCE JOHNSON</h3>
+                    <p>Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="project_manager.jpg" alt="Project Manager">
+                    <h3>MR. BENSON</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="admin.jpg" alt="Admin">
+                    <h3>MR. MOHAMMED S. JIMMY</h3>
+                    <p>Admin</p>
+                </div>
+                <div class="team-member">
+                    <img src="media_assistant.jpg" alt="Media Assistant">
+                    <h3>KADIATU KOROMA</h3>
+                    <p>Media Assistant</p>
+                </div>
+                <div class="team-member">
+                    <img src="it_manager.jpg" alt="IT Manager">
+                    <h3>MR. EMMANUEL B. KOROMA</h3>
+                    <p>IT Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="finance_manager.jpg" alt="Finance Manager">
+                    <h3>MR. IBRAHIM SESAY</h3>
+                    <p>Finance Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="marketing_manager.jpg" alt="Marketing Manager">
+                    <h3>MISS MARIAMA KAMARA</h3>
+                    <p>Marketing Manager</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minim Global Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

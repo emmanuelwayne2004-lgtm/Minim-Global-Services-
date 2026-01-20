@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Minim Global Services</title>
+    <style>
+        /* Reset default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Full height layout */
+        html,
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #0B2D60;
+            color: #ffffff;
+            background-image: url('GLOBAL TECH LOGO.webp');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: #001F3F;
+            box-shadow: 0 6px 6px rgba(225, 222, 222, 0.963);
+        }
+
+        /* Logo Styling */
+        .logo {
+            height: 70px;
+            width: auto;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #4FC3F7;
+        }
+
+        /* Make main section grow to fill space */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        /* Expertise Section */
+        #expertise {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 220px;
+            padding: 20px;
+            background-color: #1A3A6B;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            color: #ffffff;
+        }
+
+        .card:hover {
+            background-color: #007BFF;
+            transform: scale(1.05);
+        }
+
+        /* Advertisement Card - Dark Blue Background & White Text */
+        .ad-card {
+            background-color: #001F3F;
+            color: #ffffff;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .ad-card:hover {
+            background-color: #004080;
+            transform: scale(1.05);
+        }
+
+        /* Footer always at the bottom */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001F3F;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="MINIM LOGO.jpeg" alt="Minim Global Services Logo" class="logo">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome to Minim Global Services</h1>
+            <p>The future that connects us together!</p>
+        </section>
+        <section id="expertise">
+            <h2>Our Expertise</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Media Consultancy</h3>
+                    <p>Expert guidance in media strategies and branding.</p>
+                </div>
+                <div class="card">
+                    <h3>Event Planning</h3>
+                    <p>Organizing and managing events with precision.</p>
+                </div>
+                <a href="blog.html" style="text-decoration: none;">
+                    <div class="card ad-card">
+                        <h3>Advertisement</h3>
+                        <p>Boost your brand visibility through strategic ads.</p>
+                    </div>
+                </a>
+                <div class="card">
+                    <h3>Track Your Expenditure</h3>
+                    <p>Monitor and manage your finances effectively.</p>
+                </div>
+                <div class="card">
+                    <h3>Live Streaming</h3>
+                    <p>Broadcast events in real time with high quality.</p>
+                </div>
+                <div class="card">
+                    <h3>Live Jazz Band</h3>
+                    <p>Experience live jazz music for special occasions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Minim Global Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

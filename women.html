@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Clothing</title>
+    <style>
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-color: #0A192F;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            padding: 20px;
+            background-color: #001F3F;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 70px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 50px 30px;
+            flex: 1;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .image-gallery img:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .image-gallery img:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .image-gallery img:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .image-gallery img:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .buttons a:hover {
+            background: #003366;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="logo.png" alt="Women's Clothing Logo" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <h1>Women's Clothing</h1>
+        <p>Discover the latest trends in Women's Fashion</p>
+
+        <!-- Image Gallery with Animation -->
+        <div class="image-gallery">
+            <img src="women image.jpg" alt="Women's Clothing 1">
+            <img src="women image 1.jpg" alt="Women's Clothing 2">
+            <img src="women image 2.jpg" alt="Women's Clothing 3">
+            <img src="women image 3.jpg" alt="Women's Clothing 4">
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="buttons">
+            <a href="clothing.html">Back to Clothing</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</body>
+
+</html>
